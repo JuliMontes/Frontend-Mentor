@@ -1,0 +1,168 @@
+/*Reset margin */
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom properties */
+:root {
+    --pry-color-pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background: url("../images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--pry-color-pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    width: 45%;
+    /*background-color: var(--very-pale-blue);*/
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.card-img {
+    border-radius: 30px 30px 0 0;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+    color: var(--dark-blue);
+}
+
+.card-description {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--desaturated-blue);
+    margin-bottom: 1.7rem;
+}
+
+.card-prices {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.2rem auto;
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+/*.card-prices-title {
+
+}*/
+
+.container-prices {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icon-music {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+div > p {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+div > p + span {
+    color: var(--desaturated-blue);
+}
+
+.prices-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.prices-change > a {
+    color: var(--bright-blue);
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.prices-change > a:hover {
+    text-decoration: none;
+    color: var(--bright-blue);
+    font-weight: 700;
+    opacity: 100%;
+    transition: all 0.4s linear;
+    transform: scale(1.1);
+}
+
+.btn-proceed {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    background-color: var(--bright-blue);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--very-pale-blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    box-shadow: 3px 15px var(--very-pale-blue);
+}
+
+.btn-proceed:hover {
+    opacity: 75%;
+    transition: all 0.4s linear;
+    transform: scale(1.1);
+}
+
+.btn-cancel {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+    border: none;
+    color: var(--desaturated-blue);
+    padding: 0.75rem;
+    cursor: pointer;
+    font-weight: 900;
+    background: none;
+    transition: all 0.4s linear;
+}
+
+.btn-cancel:hover {
+    color: var(--dark-blue);
+    transition: all 0.4s linear;
+    transform: scale(1.1);
+}
