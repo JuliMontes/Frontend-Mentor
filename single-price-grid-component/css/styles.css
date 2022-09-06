@@ -24,9 +24,30 @@ body {
 
 /*------------------ Mobile First -----------------*/
 .main_container {
-    
+    background-color: white;
+    width: 313px;
+    height: 730px;
+    margin: 70px auto 70px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
+.our_comunity {
+    padding: 8px 24px 24px 24px;
+    height: 270px;
+}
+
+.montly_subscription {
+    background-color: var(--Cyan);
+    padding: 12px 24px 24px 24px;
+    height: 230px;
+}
+
+.why_us {
+    background-color: var(--Light-cyan);
+    padding: 8px 24px 24px 24px;
+    height: 230px;
+}
 
 /*--------------------- Footer --------------------*/
 footer {
