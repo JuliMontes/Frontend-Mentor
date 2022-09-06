@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+/*--------------- Reseteo de diseño ---------------*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/*------------ Declaración de Variables -----------*/
 :root {
     --Cyan: hsl(179, 62%, 43%);
+    --Light-cyan: hsl(179, 62%, 83%);
     --Bright-yellow: hsl(71, 73%, 54%);
     --Light-gray: hsl(204, 43%, 93%);
     --Grayish-blue: hsl(218, 22%, 67%);
@@ -19,10 +22,13 @@ body {
     background-color: var(--Light-gray);
 }
 
+/*------------------ Mobile First -----------------*/
+.main_container {
+    
+}
 
 
-
-
+/*--------------------- Footer --------------------*/
 footer {
     font-size: 11px; 
     text-align: center;
