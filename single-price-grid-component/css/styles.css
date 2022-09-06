@@ -10,7 +10,7 @@
 /*------------ Declaración de Variables -----------*/
 :root {
     --Cyan: hsl(179, 62%, 43%);
-    --Light-cyan: hsl(179, 62%, 83%);
+    --Light-cyan: hsl(179, 47%, 52%);
     --Bright-yellow: hsl(71, 73%, 54%);
     --Light-gray: hsl(204, 43%, 93%);
     --Grayish-blue: hsl(218, 22%, 67%);
@@ -32,21 +32,88 @@ body {
     overflow: hidden;
 }
 
-.our_comunity {
+/*------------------ Our Community ----------------*/
+.our_community {
     padding: 8px 24px 24px 24px;
     height: 270px;
 }
 
+.our_community h2.title {
+    font-size: 1.2em;
+    color: var(--Cyan);
+    margin-top: 25px;
+}
+
+.our_community h2.promo {
+    font-size: 1em;
+    color: var(--Bright-yellow);
+    margin: 25px 0 10px 0;
+}
+
+.our_community p {
+    font-size: 0.86em;
+    color: var(--Grayish-blue);
+    line-height: 27px;
+    margin-top: 16px;
+}
+
+/*--------------- Montly Subscription -------------*/
 .montly_subscription {
     background-color: var(--Cyan);
     padding: 12px 24px 24px 24px;
     height: 230px;
+    color: var(--Light-gray);
 }
 
+.montly_subscription h2 {
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.payment {
+    font-size: 0.85em;
+}
+
+.montly_subscription p {
+    margin-top: 8px;
+}
+
+button {
+    margin-top: 25px;
+    background-color: var(--Bright-yellow);
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+    border-style: none;
+    color: var(--Light-gray);
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 5px 5px 12px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*---------------------- Why Us -------------------*/
 .why_us {
     background-color: var(--Light-cyan);
     padding: 8px 24px 24px 24px;
     height: 230px;
+    color: var(--Light-gray);
+}
+
+.why_us h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 0.85em;
+    line-height: 20px;
+    font-weight: 300;
 }
 
 /*--------------------- Footer --------------------*/
