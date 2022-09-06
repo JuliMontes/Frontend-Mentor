@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-yellow: hsl(71, 73%, 54%);
+    --Light-gray: hsl(204, 43%, 93%);
+    --Grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--Light-gray);
+}
+
+
+
+
+
+footer {
+    font-size: 11px; 
+    text-align: center;
+}
+footer a {
+    color: hsl(228, 45%, 44%);
+}
