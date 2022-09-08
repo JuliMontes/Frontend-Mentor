@@ -13,20 +13,98 @@
     --Soft_Magenta: hsl(300, 69%, 71%);
 }
 
-head {
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: var(--Light-gray);
+    background-color: var(--Violet);
 }
 
+#section1{background-color: cadetblue;}
+#section2{background-color: coral;}
+.social-container{border: 1px solid white;}
+.networks{border: 1px solid white;}
 
+/*----------------------- Main --------------------*/
+main {
+    width: 595px;
+    height: 1448px;
+    margin: 75px auto 40px;
+}
 
+/*-------------------- Section 1 ------------------*/
+#section1 {
+    height: 724px;
+}
 
+#logo-container {
+    width: 180px;
+}
 
+#mockup {
+    width: 595px;
+}
+
+/*-------------------- Section 2 ------------------*/
+#section2 {
+    height: 724px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    text-align: center;
+    height: 170px;
+}
+
+#section2 p{
+    font-size: 31px;
+    text-align: center;
+    height: 280px;
+}
+
+.btn-register {
+    text-align: center;
+}
+
+.btn-register a {
+    width: 400px;
+    height: 86px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 25px;
+    color: var(--Violet);
+    display: inline-block;
+    padding-top: 22px;
+    text-decoration: none;
+    margin-bottom: 122px;
+}
+
+.btn-register a:hover {
+    background-color: var(--Soft_Magenta);
+    color: white;
+}
+
+/*------------------ Social Network ---------------*/
+.social-container {
+    text-align: center;
+}
+
+.networks {
+    width: 208px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.networks a {
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    padding-top: 12px;
+}
 
 /*--------------------- Footer --------------------*/
 footer {
