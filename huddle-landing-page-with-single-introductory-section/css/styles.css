@@ -101,6 +101,7 @@ h1 {
 }
 
 .networks a {
+    border: 2px solid white;
     text-decoration: none;
     color: white;
     width: 60px;
