@@ -16,17 +16,14 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: white;
     background-color: var(--Violet);
-    background-image: url(../images/bg-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    color: white;
 }
 
-/* #section1{background-color: cadetblue;}
+#section1{background-color: cadetblue;}
 #section2{background-color: coral;}
 .social-container{border: 1px solid white;}
-.networks{border: 1px solid white;} */
+.networks{border: 1px solid white;}
 
 /*----------------------- Main --------------------*/
 main {
@@ -114,30 +111,19 @@ h1 {
 .networks a:hover {
     border-color: var(--Soft_Magenta);
     color: var(--Soft_Magenta);
-    cursor: pointer;
 }
 
 /*--------------------- Footer --------------------*/
 footer {
-    font-size: 11px;
+    font-size: 11px; 
     text-align: center;
 }
-
-.attribution {
-    min-width: 595px;
-}
-
 footer a {
-    /* color: hsl(228, 45%, 44%); */
-    color: #eee;
+    color: hsl(228, 45%, 44%);
 }
 
 /*--------------------- Desktop -------------------*/
 @media only screen and (min-width:1284px) {
-    body {
-        background-image: url(../images/bg-desktop.svg);
-        background-size: unset;
-    }
     main {
         margin: 60px auto 0px;
         width: 1284px;
@@ -175,7 +161,7 @@ footer a {
 
     #section2 p {
         height: 98px;
-        font-size: 18px;
+        font-size: 20px;
         text-align: left;
         padding-right: 17px;
     }
