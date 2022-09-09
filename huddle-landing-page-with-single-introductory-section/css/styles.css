@@ -1,73 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
-
 /*--------------- Reseteo de diseño ---------------*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 /*------------ Declaración de Variables -----------*/
 :root {
     --Violet: hsl(257, 40%, 49%);
     --Soft_Magenta: hsl(300, 69%, 71%);
 }
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: var(--Violet);
     color: white;
+    background-color: var(--Violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-
-#section1{background-color: cadetblue;}
+/* #section1{background-color: cadetblue;}
 #section2{background-color: coral;}
 .social-container{border: 1px solid white;}
-.networks{border: 1px solid white;}
-
+.networks{border: 1px solid white;} */
 /*----------------------- Main --------------------*/
 main {
     width: 595px;
     height: 1448px;
     margin: 75px auto 40px;
 }
-
 /*-------------------- Section 1 ------------------*/
 #section1 {
     height: 724px;
 }
-
 #logo-container {
     width: 180px;
 }
-
 #mockup {
     width: 595px;
 }
-
 /*-------------------- Section 2 ------------------*/
 #section2 {
     height: 724px;
 }
-
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 46px;
     text-align: center;
     height: 170px;
 }
-
 #section2 p{
     font-size: 31px;
     text-align: center;
     height: 280px;
 }
-
 .btn-register {
     text-align: center;
     margin-bottom: 122px;
 }
-
 .btn-register a {
     width: 400px;
     height: 86px;
@@ -80,17 +70,14 @@ h1 {
     text-decoration: none;
     
 }
-
 .btn-register a:hover {
     background-color: var(--Soft_Magenta);
     color: white;
 }
-
 /*------------------ Social Network ---------------*/
 .social-container {
     text-align: center;
 }
-
 .networks {
     width: 208px;
     display: inline-flex;
@@ -107,23 +94,29 @@ h1 {
     font-size: 28px;
     padding-top: 12px;
 }
-
 .networks a:hover {
     border-color: var(--Soft_Magenta);
     color: var(--Soft_Magenta);
+    cursor: pointer;
 }
-
 /*--------------------- Footer --------------------*/
 footer {
-    font-size: 11px; 
+    font-size: 11px;
     text-align: center;
 }
-footer a {
-    color: hsl(228, 45%, 44%);
+.attribution {
+    min-width: 595px;
 }
-
+footer a {
+    /* color: hsl(228, 45%, 44%); */
+    color: #eee;
+}
 /*--------------------- Desktop -------------------*/
 @media only screen and (min-width:1284px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: unset;
+    }
     main {
         margin: 60px auto 0px;
         width: 1284px;
@@ -131,26 +124,21 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
     /*------------------ Section 1 ----------------*/
     #section1 {
         width: 753px;
         height: 700px;
     }
-
     #logo-container {
         height: 134px;
     }
-
     #mockup {
         width: 696px;
     }
-
     /*------------------ Section 2 ----------------*/
     #section2 {
         height: 700px;
     }
-
     h1 {
         margin-top: 165px;
         height: 133px;
@@ -158,19 +146,16 @@ footer a {
         text-align: left;
         padding-right: 93px;
     }
-
     #section2 p {
         height: 98px;
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
         padding-right: 17px;
     }
-
     .btn-register {
         text-align: left;
         margin-bottom: 179px;
     }
-
     .btn-register a {
         width: 200px;
         height: 58px;
@@ -178,15 +163,12 @@ footer a {
         padding-top: 14px;
         text-align: center;
     }
-
     .social-container {
         text-align: right;
     }
-
     .networks {
         width: 156px;
     }
-
     .networks a {
         width: 44px;
         height: 44px;
