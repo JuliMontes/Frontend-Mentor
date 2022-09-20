@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/*--------------- Reset design ---------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*------------ Declaración de Variables -----------*/
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft_Magenta: hsl(300, 69%, 71%);
+}
+
+
+/*--------------------- Footer --------------------*/
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+/* .attribution {
+    min-width: 595px;
+} */
+footer a {
+    color: hsl(228, 45%, 44%);
+}
