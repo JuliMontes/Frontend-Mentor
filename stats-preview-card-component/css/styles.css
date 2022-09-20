@@ -1,35 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 /*--------------- Reset design ---------------*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /*------------ Declaración de Variables -----------*/
 :root {
-    --Very_dark_blue: hsl(233, 47%, 7%); /*main background*/
-    --Dark_desaturated_blue: hsl(244, 38%, 16%); /*card background*/
-    --Soft_violet: hsl(277, 64%, 61%); /*accent*/
+    --VeryDarkBlue: hsl(233, 47%, 7%); /*main background*/
+    --DarkDesaturatedBlue: hsl(244, 38%, 16%); /*card background*/
+    --SoftViolet: hsl(277, 64%, 61%); /*accent*/
     --White: hsl(0, 0%, 100%); /*main heading, stats*/
-    --Slightly_transparent_white: hsla(0, 0%, 100%, 0.75); /*main paragraph*/
-    --Slightly_transparent_white: hsla(0, 0%, 100%, 0.6); /*stat headings*/
+    --SlightlyTransparentP: hsla(0, 0%, 100%, 0.75); /*main paragraph*/
+    --SlightlyTransparentS: hsla(0, 0%, 100%, 0.6); /*stat headings*/
+    --Layer: rgba(110, 30, 160, 0.7);
 }
 
 /*------------ Body -----------*/
 body {
-    font-family: 'Inter', sans-serif;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
+    background-color: var(--VeryDarkBlue);
+}
+
+/*------------ Main -----------*/
+main {
+    height: 782px;
+    width: 328px;
+    background-color: var(--DarkDesaturatedBlue);
+    margin: 88px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/*------------ Section 1 -----------*/
+.image {
+    background-image: url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+}
+
+#layer {
+    background-color: var(--Layer);
+    height: 100%;
+    width: 100%;
+}
+
+/*------------ Section 2 -----------*/
+.section2 {
+    padding: 40px 33px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--White);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8em;
+    height: 115px;
+}
+
+span {
+    color: var(--SoftViolet);
+}
+
+p {
+    color: var(--SlightlyTransparentP);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 25px;
+    height: 137px;
+}
+
+/*------------ stats -----------*/
+.stats {
+    color: var(--SlightlyTransparentS);
+    line-height: 25px;
+}
+
+.amount {
+    font-weight: 700;
+    font-size: 1.45em;
+    color: var(--White);
+}
+
+.concept {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 33px;
+}
+
+.last {
+    text-transform: uppercase;
 }
 
 /*--------------------- Footer --------------------*/
 footer {
     font-size: 11px;
     text-align: center;
+    margin-bottom: 80px;
 }
 /* .attribution {
     min-width: 595px;
 } */
 footer a {
-    color: hsl(228, 45%, 44%);
+    color: var(--SoftViolet);
 }
