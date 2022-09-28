@@ -19,22 +19,22 @@
 /*------------ Body -----------*/
 body {
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     background-color: var(--veryLightGray);
 }
 
 /*------------ Main Container -----------*/
 .main-container {
-    width: 325px;
-    margin: 87px auto 40px;
-    border-radius: 8px;
+    width: 20.3125rem;
+    margin: 5.4375rem auto 2.5rem;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 
 article {
     width: 100%;
-    height: 440px;
-    padding: 48px;
+    height: 27.5rem;
+    padding: 3rem;
 }
 
 /*------------ Sedans -----------*/
@@ -54,7 +54,7 @@ article {
 
 /*------------ Icons -----------*/
 img {
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
 }
 
 /*------------ Titles -----------*/
@@ -63,30 +63,30 @@ h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.4em;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 /*------------ Paragraphs -----------*/
 p {
     color: var(--transparentWhite);
-    line-height: 25px;
-    margin-bottom: 25px;
+    line-height: 1.5625rem;
+    margin-bottom: 1.5625rem;
 }
 
 /*------------ Buttons -----------*/
 button{
-    width: 148px;
-    height: 46px;
-    border-radius: 45px;
+    width: 9.25rem;
+    height: 2.875rem;
+    border-radius: 2.8125rem;
     border-style: none;
     background-color: var(--veryLightGray);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 button:hover {
     cursor: pointer;
-    border: 2px solid var(--veryLightGray);
+    border: 0.125rem solid var(--veryLightGray);
 }
 
 #sedans-btn {
@@ -129,4 +129,21 @@ footer p {
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+/*----------------------- Desktop -----------------------*/
+@media screen and (min-width:944px) {
+    .main-container{
+        width: 57.75rem;
+        display: flex;
+        margin-top: 10.625rem;
+    }
+
+    article{
+        height: 31.25rem;
+    }
+
+    p {
+        margin-bottom: 5rem;
+    }
 }
