@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* --------------- Reset Margins --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- Vars --------------- */
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueMain: hsl(217, 54%, 11%); /* main BG */
+    --veryDarkBlueCard: hsl(216, 50%, 16%); /* card BG */
+    --veryDarkBlueLine: hsl(215, 32%, 27%); /* Line */
+    --white: hsl(0, 0%, 100%);
+}
+
+/* --------------- Body --------------- */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--veryDarkBlueMain);
+    font-size: 18px;
+}
+
+/* --------------- Main Container --------------- */
+.main-container {
+    border: 1px solid white;
+    background-color: var(--veryDarkBlueCard);
+    width: 330px;
+    height: 546px;
+    margin: 60px auto;
+    border-radius: 16px;
+    padding: 26px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.3em;
+    margin-bottom: 18px;
+}
+
+.description {
+
+}
+
+/* --------------- Value --------------- */
+.value {
+
+}
+
+/* --------------- Time --------------- */
+.time {
+
+}
+
+/* --------------- Line --------------- */
+.line {
+    background-color: var(--veryDarkBlueLine);
+    height: 1px;
+}
+
+/* --------------- Creator Container --------------- */
+.creator-container {
+
+}
+
+/* --------------- Footer --------------- */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
