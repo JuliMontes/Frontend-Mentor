@@ -1,23 +1,25 @@
-/*Reset margin */
+/* ---------- Reset margin ---------- */
 *,*::after, *::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Custom properties */
+/* ---------- Custom properties ---------- */
 :root {
-    --pry-color-pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(245, 75%, 52%);
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --desaturated-blue: hsl(224, 23%, 55%);
-    --dark-blue: hsl(223, 47%, 23%);
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
 }
 
+/* ---------- Body ---------- */
 body {
     background: url("../images/pattern-background-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: var(--pry-color-pale-blue);
+    background-color: var(--paleBlue);
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -25,6 +27,7 @@ img {
     width: 100%;
 }
 
+/* ---------- Container ---------- */
 .container {
     width: 80%;
     max-width: 1200;
@@ -32,6 +35,7 @@ img {
     margin: 0 auto;
 }
 
+/* ---------- Card ---------- */
 .card {
     display: flex;
     justify-content: center;
@@ -56,7 +60,7 @@ img {
     letter-spacing: 1px;
     margin-top: 1.7rem;
     margin-bottom: 1.7rem;
-    color: var(--dark-blue);
+    color: var(--darkBlue);
 }
 
 .card-description {
@@ -65,7 +69,7 @@ img {
     text-align: center;
     font-size: 16px;
     line-height: 1.4;
-    color: var(--desaturated-blue);
+    color: var(--desaturatedBlue);
     margin-bottom: 1.7rem;
 }
 
@@ -74,7 +78,7 @@ img {
     justify-content: space-around;
     margin: 2.2rem auto;
     font-size: 16px;
-    background-color: var(--very-pale-blue);
+    background-color: var(--veryPaleBlue);
     width: 80%;
     border-radius: 10px;
     padding: 1.5rem;
@@ -96,11 +100,11 @@ img {
 
 div > p {
     font-weight: 700;
-    color: var(--dark-blue);
+    color: var(--darkBlue);
 }
 
 div > p + span {
-    color: var(--desaturated-blue);
+    color: var(--desaturatedBlue);
 }
 
 .prices-change {
@@ -111,14 +115,14 @@ div > p + span {
 }
 
 .prices-change > a {
-    color: var(--bright-blue);
+    color: var(--brightBlue);
     opacity: 75%;
     cursor: pointer;
 }
 
 .prices-change > a:hover {
     text-decoration: none;
-    color: var(--bright-blue);
+    color: var(--brightBlue);
     font-weight: 700;
     opacity: 100%;
     transition: all 0.4s linear;
@@ -129,16 +133,16 @@ div > p + span {
     display: block;
     margin: 0 auto;
     width: 80%;
-    background-color: var(--bright-blue);
+    background-color: var(--brightBlue);
     padding: 1rem;
     border: none;
     border-radius: 10px;
-    color: var(--very-pale-blue);
+    color: var(--veryPaleBlue);
     font-size: 0.8rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.4s linear;
-    box-shadow: 3px 15px var(--very-pale-blue);
+    box-shadow: 3px 15px var(--veryPaleBlue);
 }
 
 .btn-proceed:hover {
@@ -153,7 +157,7 @@ div > p + span {
     margin-top: 1rem;
     margin-bottom: 1.7rem;
     border: none;
-    color: var(--desaturated-blue);
+    color: var(--desaturatedBlue);
     padding: 0.75rem;
     cursor: pointer;
     font-weight: 900;
@@ -162,11 +166,21 @@ div > p + span {
 }
 
 .btn-cancel:hover {
-    color: var(--dark-blue);
+    color: var(--darkBlue);
     transition: all 0.4s linear;
     transform: scale(1.1);
 }
 
+/* ------------------- Footer ------------------- */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 1rem 0.5rem; 
+  }
+
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 /* ----------------------------------------------------------------------------------------------- */
 
@@ -225,7 +239,7 @@ div > p + span {
         width: 85%;
         padding: 0.8rem;
         font-size: 0.7rem;
-        box-shadow: 3px 15px var(--very-pale-blue);
+        box-shadow: 3px 15px var(--veryPaleBlue);
     }
     
     .btn-cancel {
@@ -237,10 +251,9 @@ div > p + span {
     }
     
     .btn-cancel:hover {
-        color: var(--dark-blue);
+        color: var(--darkBlue);
         transition: all 0.4s linear;
         transform: scale(1.1);
     }
-
 
 }
