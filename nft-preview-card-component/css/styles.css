@@ -26,17 +26,18 @@ body {
 
 /* --------------- Main Container --------------- */
 .main-container {
-    border: 1px solid white;
     background-color: var(--veryDarkBlueCard);
     width: 330px;
     height: 546px;
     margin: 60px auto;
     border-radius: 16px;
     padding: 26px;
+    box-shadow: 10px 10px 2px 20px var(--veryDarkBlueMain);
 }
 
 /* --------------- Image --------------- */
 .image {
+    margin: 0 auto;
     background-image: url(../images/image-equilibrium.jpg);
     background-size: cover;
     width: 280px;
@@ -68,38 +69,97 @@ h1 {
 }
 
 .description {
+    font-size: 0.9em;
+    color: var(--softBlue);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
 
+/* --------------- Details Container --------------- */
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9em;
 }
 
 /* --------------- Value --------------- */
 .value {
-
+    color: var(--cyan);
 }
 
 /* --------------- Time --------------- */
 .time {
-
+    color: var(--softBlue);
 }
 
 /* --------------- Line --------------- */
 .line {
-    background-color: var(--veryDarkBlueLine);
-    height: 1px;
+    /* background-color: var(--veryDarkBlueLine);
+    height: 1px; */
+    border-top: 1px solid var(--veryDarkBlueLine);
+    margin-bottom: 15px;
 }
 
 /* --------------- Creator Container --------------- */
 .creator-container {
+    display: flex;
+    align-items: center;
+}
 
+.photo {
+    background-image: url(../images/image-avatar.png);
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creator {
+    color: var(--softBlue);
+    font-size: 0.85em;
+    margin-left: 15px;
+}
+
+.creator span {
+    color: var(--white);
+}
+
+.title:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 /* --------------- Footer --------------- */
 .attribution { 
     font-size: 11px;
     text-align: center;
+    color: var(--softBlue);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--white);
 }
 
-/* Video 1:03:30 */
+.attribution a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+/* --------------- Desktop --------------- */
+@media (min-width: 900px) {
+    .main-container {
+        width: 354px;
+        height: 600px;
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+}
