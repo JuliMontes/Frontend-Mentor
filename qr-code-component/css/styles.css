@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* --------------- Reset Margins --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- Root --------------- */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+}
+
+/* --------------- Body --------------- */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: var(--lightGray);
+}
+
+/* --------------- Main Container --------------- */
+.main-container {
+    background-color: var(--white);
+    width: 330px;
+    height: 500px;
+    margin: 80px auto;
+    border-radius: 16px;
+    padding: 18px;
+}
+
+/* --------------- Hero --------------- */
+.hero {
+    background-image: url(../images/image-qr-code.png);
+    background-size: cover;
+    width: 290px;
+    height: 290px;
+    margin: 0 auto;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+/* --------------- Improve --------------- */
+.improve {
+    text-align: center;
+}
+
+.title {
+    color: var(--darkBlue);
+    margin-bottom: 20px;
+}
+
+.text {
+    color: var(--grayishBlue);
+    margin: 0 20px;
+}
+
+/* --------------- Footer --------------- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* --------------- Desktop --------------- */
+@media (min-width: 900px) {
+
+}
