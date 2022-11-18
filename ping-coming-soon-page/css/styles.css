@@ -140,12 +140,18 @@ input[type="submit"]:hover {
 
 /* --------------- Footer --------------- */
 .attribution { 
-    font-size: 11px; 
-    text-align: center; 
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--veryDarkBlue);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--blue); 
+}
+
+.attribution a:hover { 
+    color: var(--paleBlue); 
 }
 
 /* --------------- Desktop --------------- */
