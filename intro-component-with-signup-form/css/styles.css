@@ -28,6 +28,7 @@ body {
     background-color: var(--red);
     background-image: url(../images/bg-intro-mobile.png);
     color: var(--white);
+    user-select: none;
 }
 
 /* --------------- Main --------------- */
@@ -100,6 +101,8 @@ input {
     outline: none;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
+    color: var(--darkBlue);
+    background-color: transparent;
 }
 
 input[type="submit"] {
@@ -121,6 +124,10 @@ input[type="submit"]:hover {
     transition: 300ms;
 }
 
+.colorP::placeholder{
+    color: var(--red);
+}
+
 /* --------------- Error --------------- */
 .error-container {
     position: relative;
@@ -130,6 +137,7 @@ input[type="submit"]:hover {
     position: absolute;
     right: 15px;
     top: -45px;
+    user-select: none;
 }
 
 .error {
@@ -138,6 +146,24 @@ input[type="submit"]:hover {
     text-align: right;
     font-size: 12px;
     margin: -12px 0 18px;
+    user-select: none;
+}
+
+/* --------------- Check --------------- */
+.icon-check {
+    position: absolute;
+    right: 15px;
+    top: -45px;
+    user-select: none;
+}
+
+.check {
+    color: var(--green);
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    margin: -12px 5px 18px;
+    user-select: none;
 }
 
 /* --------------- Terms --------------- */
